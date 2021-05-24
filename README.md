@@ -14,7 +14,7 @@ For full development information, please see [DEVELOPMENT.md](DEVELOPMENT.md).
 npm install
 
 # Run locally (view at http://localhost:3000)
-npm starty
+npm run start
 
 # Run tests
 npm test
