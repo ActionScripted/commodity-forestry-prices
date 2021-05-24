@@ -34,7 +34,9 @@ function reducer(state, action) {
 
 
 function App() {
-  // Runs once (app start/mount)
+  const [state, dispatch] = useReducer(reducer, initialState, init);
+
+  // Runs once (app start/mount) via empty deps
   useEffect(() => {
     fetch(QUANDL_API_BASE + QUANDL_CODE_HARD_LOGS, {
       mode: 'cors',
@@ -52,8 +54,10 @@ function App() {
 
   return (
     <div className="App">
+      <h1>Commodity Forestry Prices</h1>
     </div>
   );
 }
+
 
 export default App;
